@@ -1,0 +1,139 @@
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    width: 100%;
+    max-width: 400px;
+    padding: 1rem;
+} 
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    font-size: var(--desk-h1);
+}
+
+main .login .content .logo span {
+    font-size: var(--desk-h1);
+    font-weight: 700;
+}
+
+main .login .content form {
+    display: grid;
+    gap: 1rem;
+}
+
+main .login .content form .inputEmail,
+main .login .content form .inputSenha {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+main .login .content form .inputEmail label,
+main .login .content form .inputSenha label {
+    font-size: var(--desk-sub);
+    font-weight: 700;
+}
+
+main .login .content form .inputEmail input,
+main .login .content form .inputSenha input {
+    border: 1px solid #E2E8F0;
+    border-radius: 4px;
+    padding: 1rem 0.75rem;
+}
+
+main .login .content form .inputEmail input:hover,
+main .login .content form .inputSenha input:hover,
+main .login .content form .inputEmail input:focus,
+main .login .content form .inputSenha input:focus {
+    border: 1px solid var(--purple);
+    outline: none;
+}
+
+
+main .login .content form .inputEmail input:disabled,
+main .login .content form .inputSenha input:disabled {
+    border: 0;
+}
+
+.buttonEntrar {
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+    border: 0;
+    border-radius: 4px;
+    background-color: var(--purple);
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.buttonEntrar:hover {
+    background-color: #9F67FF;
+}
+
+.esqueceuSenha{
+    cursor: pointer;
+    font-size: var(--desk-sub);
+    font-weight: bold;
+    color: var(--purple);
+}
+.box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.destaque {
+    font-weight: 700;
+    color: var(--purple);
+    cursor: pointer;
+}
+
+.destaque:hover {
+    text-decoration: underline;
+}
+
+.inputSenha {
+    position: relative;
+  }
+  
+.passwordContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+    
+.passwordIcon {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+  }
+
+.input__box{
+    width: 100%;
+}
+.error {
+    color: red;
+    font-size: 14px;
+    margin: 0;
+  }
+
+@media screen and (min-width: 900px) {
+    main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        height: 100vh;
+    }
+
+    .capa .imagem {
+        width: 100%;
+        height: 100vh;
+        background-image: url("../img/fundo.png");
+        background-size: cover;
+    }
+}
